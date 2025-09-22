@@ -25,25 +25,50 @@ export default function Home() {
           </li>
         </ol>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-2xl mx-auto">
-          <a
-            className="rounded-lg border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm h-12 px-4 text-center"
-            href="/skills"
-          >
-            Client Skills Demo
-          </a>
-          <a
-            className="rounded-lg border border-solid border-blue-500 transition-colors flex items-center justify-center bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-300 gap-2 hover:bg-blue-100 dark:hover:bg-blue-800 font-medium text-sm h-12 px-4 text-center"
-            href="/skills-ssr"
-          >
-            Server-Side Rendering
-          </a>
-          <a
-            className="rounded-lg border border-solid border-green-500 transition-colors flex items-center justify-center bg-green-50 dark:bg-green-900 text-green-700 dark:text-green-300 gap-2 hover:bg-green-100 dark:hover:bg-green-800 font-medium text-sm h-12 px-4 text-center"
-            href="/skills-client"
-          >
-            Interactive Client
-          </a>
+        <div className="space-y-6">
+          {/* Skills Pages */}
+          <div>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 text-center">Skills Demo Pages</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl mx-auto">
+              <a
+                className="rounded-lg border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm h-12 px-4 text-center"
+                href="/skills"
+              >
+                Client Skills Demo
+              </a>
+              <a
+                className="rounded-lg border border-solid border-blue-500 transition-colors flex items-center justify-center bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-300 gap-2 hover:bg-blue-100 dark:hover:bg-blue-800 font-medium text-sm h-12 px-4 text-center"
+                href="/skills-ssr"
+              >
+                Server-Side Rendering
+              </a>
+              <a
+                className="rounded-lg border border-solid border-green-500 transition-colors flex items-center justify-center bg-green-50 dark:bg-green-900 text-green-700 dark:text-green-300 gap-2 hover:bg-green-100 dark:hover:bg-green-800 font-medium text-sm h-12 px-4 text-center"
+                href="/skills-client"
+              >
+                Interactive Client
+              </a>
+            </div>
+          </div>
+          
+          {/* Post Skill Pages */}
+          <div>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 text-center">Post Skill Pages</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl mx-auto">
+              <a
+                className="rounded-lg border border-solid border-purple-500 transition-colors flex items-center justify-center bg-purple-50 dark:bg-purple-900 text-purple-700 dark:text-purple-300 gap-2 hover:bg-purple-100 dark:hover:bg-purple-800 font-medium text-sm h-12 px-4 text-center"
+                href="/post-skill"
+              >
+                Basic Post Skill
+              </a>
+              <a
+                className="rounded-lg border border-solid border-indigo-500 transition-colors flex items-center justify-center bg-indigo-50 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 gap-2 hover:bg-indigo-100 dark:hover:bg-indigo-800 font-medium text-sm h-12 px-4 text-center"
+                href="/post-skill-advanced"
+              >
+                Advanced Post Skill
+              </a>
+            </div>
+          </div>
         </div>
         <div className="flex justify-center mt-6">
           <a
