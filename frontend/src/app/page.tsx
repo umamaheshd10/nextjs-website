@@ -25,20 +25,34 @@ export default function Home() {
           </li>
         </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-2xl mx-auto">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            className="rounded-lg border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm h-12 px-4 text-center"
             href="/skills"
           >
-            View Skills Demo
+            Client Skills Demo
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
+            className="rounded-lg border border-solid border-blue-500 transition-colors flex items-center justify-center bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-300 gap-2 hover:bg-blue-100 dark:hover:bg-blue-800 font-medium text-sm h-12 px-4 text-center"
+            href="/skills-ssr"
+          >
+            Server-Side Rendering
+          </a>
+          <a
+            className="rounded-lg border border-solid border-green-500 transition-colors flex items-center justify-center bg-green-50 dark:bg-green-900 text-green-700 dark:text-green-300 gap-2 hover:bg-green-100 dark:hover:bg-green-800 font-medium text-sm h-12 px-4 text-center"
+            href="/skills-client"
+          >
+            Interactive Client
+          </a>
+        </div>
+        <div className="flex justify-center mt-6">
+          <a
+            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read our docs
+            Next.js Docs
           </a>
         </div>
       </main>
