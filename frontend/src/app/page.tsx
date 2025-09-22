@@ -69,6 +69,25 @@ export default function Home() {
               </a>
             </div>
           </div>
+          
+          {/* Dashboard & AI Features */}
+          <div>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 text-center">Dashboard & AI Features</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl mx-auto">
+              <a
+                className="rounded-lg border border-solid border-blue-500 transition-colors flex items-center justify-center bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-300 gap-2 hover:bg-blue-100 dark:hover:bg-blue-800 font-medium text-sm h-12 px-4 text-center"
+                href="/dashboard"
+              >
+                User Dashboard
+              </a>
+              <a
+                className="rounded-lg border border-solid border-green-500 transition-colors flex items-center justify-center bg-green-50 dark:bg-green-900 text-green-700 dark:text-green-300 gap-2 hover:bg-green-100 dark:hover:bg-green-800 font-medium text-sm h-12 px-4 text-center"
+                href="/recommendations"
+              >
+                AI Recommendations
+              </a>
+            </div>
+          </div>
         </div>
         <div className="flex justify-center mt-6">
           <a
